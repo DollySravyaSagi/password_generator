@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+  <h2>Password Generator</h2>
+  <input type="text" id="password" placeholder="Generated password" readonly>
+  <input type="number" id="length" placeholder="Length (e.g. 8)">
+  <div class="row">
+    <label><input type="checkbox" id="numbers"> Numbers</label>
+    <label><input type="checkbox" id="symbols"> Symbols</label>
+  </div>
+  <button onclick="generatePassword()">Generate</button>
+  <button onclick="copyPassword()">Copy</button>
+  <div class="strength" id="strength"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
